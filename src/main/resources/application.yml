@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: alfa-hiber
+  liquibase:
+    change-log: classpath:config-liquibase/master.yml
+    enabled: false
+  datasource:
+    url: "jdbc:h2:mem:alfa-hiber-db"
+    username: sa
+    password: sa
+    hikari:
+      maximum-pool-size: 10
+  h2:
+    console:
+      enabled: true
+
+#logging:
+#  level:
+#    root: error
